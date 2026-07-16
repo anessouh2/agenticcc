@@ -27,13 +27,7 @@ agent = graph.compile()
 user_input = input("ENTER : ")
 
 while user_input != "exit":
-    try:
-        agent.invoke({"messages" : [HumanMessage(content=user_input)]})
-    except Exception as exc:
-        print(
-            "\nAI error: Gemini could not answer this request. "
-            "Your API key is valid, but the account has no available quota for gemini-2.0-flash. "
-            "Enable billing or use a key/project with quota, then try again."
-        )
-        print(f"Details: {exc}")
-    user_input = input("ENTER : ") 
+    
+    agent.invoke({"messages" : [HumanMessage(content=user_input)]})
+    
+    user_input = input("ENTER :  ") 
