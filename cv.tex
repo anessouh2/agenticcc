@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in LaTeX
+% Based on "Jake's Resume" template
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine readable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ouhemna Mohamed Anes} \\ \vspace{1pt}
+    \small
+    +213 782 71 25 23 ~ $|$ ~
+    \href{mailto:om_ouhemna@esi.dz}{\underline{om\_ouhemna@esi.dz}} ~ $|$ ~
+    \href{https://anes-app.vercel.app}{\underline{anes-app.vercel.app}} ~ $|$ ~
+    \href{https://linkedin.com/in/ouhemna-mohamed-anes}{\underline{linkedin.com/in/ouhemna-mohamed-anes}}
+\end{center}
+
+
+%-----------RESUME PROFESSIONNEL-----------
+\section{Résumé Professionnel}
+\small{
+Étudiant ingénieur en informatique à l'ESI Alger, passionné par le développement web fullstack et les nouvelles
+technologies. Doté d'une solide expérience dans la conception et la réalisation de projets à forte valeur ajoutée.
+Curieux, rigoureux et autonome, avec de bonnes capacités de collaboration et de communication. À la recherche
+d'un stage pratique pour approfondir ses compétences dans un environnement professionnel stimulant.
+}
+
+%-----------FORMATION-----------
+\section{Formation}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {École Nationale Supérieure d'Informatique (ESI Alger)}{Alger, Algérie}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Expérience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Développeur Web Fullstack -- Projets Universitaires}{2022 -- Présent}
+      {ESI Alger}{Alger, Algérie}
+      \resumeItemListStart
+        \resumeItem{Conception et développement d'applications web fullstack dans le cadre de projets académiques et personnels}
+        \resumeItem{Participation active à des projets collaboratifs de la conception à la mise en production}
+        \resumeItem{Exploration et mise en pratique des technologies modernes : React, Next.js, Node.js, Python}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projets}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Portfolio Personnel} $|$ \emph{React, Vercel}}{2025}
+          \resumeItemListStart
+            \resumeItem{Conception et développement d'un portfolio interactif déployé sur Vercel, présentant les compétences et les réalisations}
+            \resumeItem{Interface moderne et responsive mettant en valeur les projets et l'identité professionnelle}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Application Web Fullstack} $|$ \emph{React, Node.js, Express.js}}{2024}
+          \resumeItemListStart
+            \resumeItem{Développement d'une application web complète avec gestion de l'authentification, API REST et base de données}
+            \resumeItem{Mise en oeuvre des bonnes pratiques de sécurité et d'architecture logicielle}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Projet Base de Données \& API} $|$ \emph{PostgreSQL, FastAPI, Python}}{2024}
+          \resumeItemListStart
+            \resumeItem{Conception d'un schéma de base de données relationnel et exposition via une API RESTful}
+            \resumeItem{Documentation complète et tests automatisés des endpoints}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{AUP4 Hackathon -- Système de Protection de Licences Logicielles} $|$ \emph{Cybersecurité, SGX, C/C++}}{2025}
+          \resumeItemListStart
+            \resumeItem{Problématique : comment protéger une licence logicielle contre le cracking, la copie et la neutralisation par des acteurs malveillants}
+            \resumeItem{Couche 1 -- Stockage sécurisé par Enclave (Intel SGX) : le code de la licence est chiffré et isolé dans une enclave matérielle, le rendant inaccessible au système d'exploitation et à tout processus externe, même avec des privilèges root}
+            \resumeItem{Couche 2 -- Liaison matérielle via TPM/TPS : génération d'une empreinte unique par machine à partir des valeurs TPM (Trusted Platform Module), rendant la licence non-transférable et inutilisable sur tout autre matériel}
+            \resumeItem{Couche 3 -- Silent Kill : mécanisme de désactivation silencieuse déclenché automatiquement en cas de tentative de contournement ou de violation d'intégrité, sans exposer d'informations exploitables à l'attaquant}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Compétences techniques}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frameworks backend}{: Node.js, Express.js, FastAPI, Flask} \\
+     \textbf{Frameworks frontend}{: React, Next.js, Tailwind CSS} \\
+     \textbf{Langages}{: JavaScript/TypeScript, Python, Java, C, SQL, HTML/CSS} \\
+     \textbf{Bases de données}{: PostgreSQL, MySQL, MongoDB} \\
+     \textbf{Cloud \& DevOps}{: Docker, Linux, Git/GitHub, Vercel} \\
+     \textbf{Autres}{: Architecture REST, Web Scraping, Développement Agile} \\
+     \textbf{Langues}{: Français, Anglais, Arabe}
+    }}
+ \end{itemize}
+
+
+%-----------SOFT SKILLS-----------
+\section{Compétences transversales}
+\small{
+Curiosité intellectuelle $\mid$ Résolution de problèmes $\mid$ Travail en équipe $\mid$ Communication $\mid$ Autonomie $\mid$ Gestion de projet
+}
+
+%-------------------------------------------
+\end{document}
