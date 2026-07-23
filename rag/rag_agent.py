@@ -18,14 +18,18 @@ load_dotenv()
 
 llm = ChatMistralAI(
     model="mistral-small-latest" , 
-    temperature=2
+    temperature=0
 )
 embeddings = MistralAIEmbeddings(
     model="mistral-embed"
 )
 
-pdf_path = "Stock_Market_Performance_2024.pdf"
 
+
+#///////////////////////////////////////////////////////////////////////////////////////////////#
+#////////////// how to load a pdf and check if there's error of loading ////////////////////////////////////#
+
+pdf_path = "Stock_Market_Performance_2024.pdf"
 
 if not os.path.exists(pdf_path):
     raise FileNotFoundError(f"PDf file not found : {pdf_path}")
@@ -39,7 +43,10 @@ except Exception as e :
     print(f"ERROR loading PDF  : {e}" )    
     raise
 
-#chunking process
+
+
+#///////////////////////////////////////////////////////////////////////////////////////////////#
+#////////////////////////////////////chunking process///////////
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size = 1000 ,
